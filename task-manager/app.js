@@ -9,11 +9,16 @@ const path = require('path');
 // Initializing an empty tasks object.
 let tasks = {};
 
-// calling load task to load existing tasks from the given file.
+// Load existing tasks from a file named tasks.json.
 
 tasks = fileHdler.loadTasks('tasks.json');
 console.log(tasks);
-let newtasks = taskMgr.addTask(tasks,'Do the dishes');
 
+//Add new tasks to the list.
+let newtasks = taskMgr.addTask(tasks,'Pack new clothes');
+
+//List all tasks.
 taskMgr.listTasks(newtasks);
+
+//Save the updated task list back to the file.
 fileHdler.saveTasks('tasks.json',newtasks); 

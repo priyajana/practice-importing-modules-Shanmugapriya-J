@@ -1,6 +1,6 @@
 
 
-// Adds the given task to the object
+// Adds a new task to the task list 
 function addTask(tasks,task)
 {
     tasks[task] = task;
@@ -8,7 +8,7 @@ function addTask(tasks,task)
     return tasks;
 }
 
-// Lists all the available tasks
+// Logs all tasks to the console
 function listTasks(tasks)
 {
     console.log('Listing all the tasks...')

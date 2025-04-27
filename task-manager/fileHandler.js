@@ -1,6 +1,7 @@
 const fs = require('fs');
 
 // Given filePath , tasks object. This function takes the object and appends it  to the end of the file.
+// Writes the tasks to a file in JSON format.
 function saveTasks(filePath, tasks)
 {
     try
@@ -21,6 +22,7 @@ function saveTasks(filePath, tasks)
 }
 
 // Given file path. This function reads and parses the file content and displays them.
+//Reads and parses the tasks from the file.
 function loadTasks(filePath)
 {
     try
